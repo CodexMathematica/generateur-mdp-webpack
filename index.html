@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de mots de passe</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="pw">
+                <span id="pw"></span>
+                <button id="copy">Copier</button>
+            </div>
+        </div>
+        <div class="body">
+            <div>
+                <label for="len">Taille du mot de passe</label>
+                <input type="number" id="len" min="4" max="20" value="7">
+            </div>
+            <div>
+                <label for="lower">Contiendra des minuscules</label>
+                <input type="checkbox" id="lower">
+            </div>
+            <div>
+                <label for="upper">Contiendra des majuscules</label>
+                <input type="checkbox" id="upper">
+            </div>
+            <div>
+                <label for="number">Contiendra des nombre</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div>
+                <label for="symbol">Contiendra des symboles</label>
+                <input type="checkbox" id="symbol">
+            </div>
+            <button id="generate">Générer</button>
+        </div>
+    </div>
+</body>
+</html>
