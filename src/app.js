@@ -1,3 +1,6 @@
+import css from "./style.css";
+import { randomCharacter } from "./helper";
+
 //Déclaration des variables permettant de cibler les balises HTML
 const displayPw = document.querySelector('#pw');
 const copyBtn = document.querySelector('#copy');
@@ -13,11 +16,7 @@ const lowerLetters = 'azertyuiopmlkjhgfdsqwxcvbn';
 const numbers = '1234567890';
 const symbols = '!?&*()_+=';
 
-//fonction permettant d'obtenir aléatoirement soit une majuscule soit une minuscule soit un nombre soit un symbole.
-function randomCharacter(x){
 
-    return x[Math.floor(Math.random() * x.length)];
-}
 
 //Création d'un tableau intermédiaire servant à stocker la ou les valeurs aléatoires obtenues via les fct précédentes.
 function generateCharacter() {
